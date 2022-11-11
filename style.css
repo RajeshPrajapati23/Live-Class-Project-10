@@ -1,0 +1,224 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-image: url(./images/main.jpg);
+  background-position: center;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  font-family: "Montserrat", sans-serif;
+}
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  width: 95%;
+}
+
+.nav-lists {
+  display: flex;
+  border-bottom: 3px solid #fff;
+  gap: 20px;
+  padding: 20px 40px 20px 0;
+}
+.logo-1 {
+  height: 2.5rem;
+}
+.nav-list {
+  list-style: none;
+  font-size: 1.4rem;
+}
+.call-section {
+  display: flex;
+  gap: 10px;
+  justify-content: space-between;
+  align-items: center;
+}
+.callphone {
+  transform: rotate(320deg);
+}
+.whole-section {
+  display: flex;
+  margin: 20vh 0 0 5vw;
+  justify-content: space-around;
+}
+.section-left h1 {
+  font-size: 3rem;
+}
+.right-section {
+  position: relative;
+}
+.box {
+  background-color: rgba(78, 78, 81, 0.512);
+  padding: 10px;
+  width: max-content;
+}
+.puzzle-icon,
+.bulb-icon {
+  background-color: #fff;
+  width: fit-content;
+  padding: 1vh;
+  border-radius: 9px;
+  color: #000;
+}
+.puzzle-box {
+  position: absolute;
+  top: -11vh;
+  right: -5vw;
+  width: 184px;
+  padding: 10px;
+}
+.bulb-box {
+  position: absolute;
+  top: 26vh;
+  right: 12vw;
+  width: 184px;
+  padding: 10px;
+}
+.puzzle-box,
+.bulb-box p {
+  font-weight: 900;
+}
+.line-1 {
+  background-color: #fff;
+  width: 2px;
+  height: 50px;
+  position: absolute;
+  top: 107px;
+  left: 120px;
+}
+.line-2 {
+  background-color: #fff;
+  width: 2px;
+  height: 50px;
+  position: absolute;
+  transform: rotate(90deg);
+  right: -26px;
+  top: 37px;
+}
+.circle-1 {
+  background-color: #fff;
+  position: absolute;
+  top: 145px;
+  border-radius: 100%;
+  padding: 10px;
+  right: 73px;
+}
+.circle-2 {
+  background-color: #fff;
+  position: absolute;
+  top: 53px;
+  border-radius: 100%;
+  padding: 10px;
+  right: -63px;
+}
+.learn-btn {
+  margin-top: 50px;
+  padding: 18px 46px;
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid;
+  border-radius: 30px;
+}
+
+@media screen and (max-width: 970px) {
+  .logo {
+    margin-right: 10px;
+  }
+}
+
+@media screen and (max-width: 910px) {
+  nav {
+    width: 95%;
+    margin-left: 10px;
+  }
+  .nav-lists {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 890px) {
+  nav {
+    flex-direction: column;
+  }
+  .puzzle-box {
+    position: absolute;
+    top: 250px;
+    right: 323px;
+  }
+  .bulb-box {
+    position: absolute;
+    top: 250px;
+    right: 100px;
+  }
+
+  .section-left h1 {
+    font-size: 2rem;
+  }
+  .right-section {
+    height: 80vh;
+  }
+}
+@media screen and (max-width: 610px) {
+  .puzzle-box {
+    position: absolute;
+    top: 250px;
+    right: 284px;
+  }
+  .bulb-box {
+    position: absolute;
+    top: 250px;
+    right: 70px;
+  }
+}
+@media screen and (max-width: 565px) {
+  .puzzle-box {
+    position: absolute;
+    top: 329px;
+    right: 193px;
+  }
+  .bulb-box {
+    position: absolute;
+    top: 200px;
+    right: 70px;
+  }
+  .right-section {
+    height: 95vh;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .puzzle-box {
+    position: absolute;
+    top: 396px;
+    right: 73px;
+  }
+  .bulb-box {
+    position: absolute;
+    top: 276px;
+    right: 70px;
+  }
+  .right-section {
+    height: 105vh;
+  }
+}
+@media screen and (max-width: 380px) {
+  nav {
+    flex-direction: column;
+  }
+  .nav-lists {
+    flex-direction: column;
+  }
+  .logo-1 {
+    margin-right: 87px;
+  }
+}
